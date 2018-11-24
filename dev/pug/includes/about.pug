@@ -1,60 +1,9 @@
+include ../config/variables
+include ../mixins/mixins
 
 section.about
 
     +section-header("About", "Our weary eyes still stray to the horizon. Though down this road we've been so many times.")
 
-    //- Creamos el array con las redes sociales
-    -
-        let socials = [
-            {
-                url  : "https://www.facebook.com",
-                icon : "fab fa-facebook-f"
-            },
-            {
-                url  : "https://www.twitter.com",
-                icon : "fab fa-twitter"
-            },
-            {
-                url  : "https://www.dribbble.com",
-                icon : "fab fa-dribbble"
-            }
-        ]
-
-    +card-about("", "Jean Smith", "Web designed", "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts", socials)
-
-
-    -
-        socials = [
-            {
-                url  : "https://www.facebook.com",
-                icon : "fab fa-facebook-f"
-            },
-            {
-                url  : "https://www.twitter.com",
-                icon : "fab fa-twitter"
-            },
-            {
-                url  : "https://www.github.com",
-                icon : "fab fa-github"
-            }
-        ]
-
-    +card-about("", "Rob Smith", "Web developer", "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts", socials)
-
-    -
-        socials = [
-            {
-                url  : "https://www.facebook.com",
-                icon : "fab fa-facebook-f"
-            },
-            {
-                url  : "https://www.twitter.com",
-                icon : "fab fa-twitter"
-            },
-            {
-                url  : "https://www.dribbble.com",
-                icon : "fab fa-dribbble"
-            }
-        ]
-
-    +card-about("", "Larry Ben", "Web designer", "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts", socials)
+    each user in usersAbout
+        +card-about(user.img, user.name, user.job, user.description, user.socials)
