@@ -1,0 +1,9 @@
+
+mixin socials (socials)
+
+    ul.socials
+
+        each social in socials
+
+            li.socials__item: a.socials__link(href= social.url)
+                i(class= social.icon)

@@ -1,0 +1,7 @@
+include ../config/variables
+
+nav#main-menu.main-menu
+  ul
+    each page in pages
+      li.main-menu__item
+          a.main-menu__link(href=page)= page

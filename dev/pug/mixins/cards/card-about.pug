@@ -1,0 +1,14 @@
+
+mixin card-about(img, name, job, description, socials)
+
+    .card-about
+
+        .card-about__header
+            h2.card-about__name= name
+            p.card-about__job= job
+
+        p.card-about__description= description
+
+        .card-about__footer
+
+            +socials(socials)

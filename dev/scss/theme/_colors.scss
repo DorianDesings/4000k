@@ -1,0 +1,37 @@
+
+:root {
+
+    --primary-color     : #3f95ea;
+    --secondary-color   : #52d3aa;
+    --background        : #f2f2f2;
+    --text-color        : #b3b3b3;
+    
+}
+
+body.teal-theme {
+
+    --primary-color     : #329998;
+    --secondary-color   : #6cc99c;
+    
+}
+
+body.red-theme {
+
+    --primary-color     : #9f466e;
+    --secondary-color   : #c24d67;
+    
+}
+
+body.olive-theme {
+
+    --primary-color     : #21825C;
+    --secondary-color   : #A4D792;
+    
+}
+
+body.dark-theme {
+
+    --background : #333;
+    --text-color : #fff;
+    
+}
