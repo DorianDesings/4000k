@@ -1,3 +1,38 @@
 section.get-in-touch
 
     +section-header("Get in touch", "Hello? Hello? Hello? Is there anybody in there? Just nod if you can hear me. Is there anyone at home?")
+
+    .contact
+
+        .contact-info
+
+            .contact-info__address
+                i.fas.fa-home
+                p.contact-info__text 5555 Love Paradise 56 New Clity 5655, Excel Tower United Kingdom 
+            .contact-info__phone
+                i.fas.fa-phone
+                p.contact-info__text (123) 465-6789
+            .contact-info__mail
+                i.fas.fa-envelope
+                p.contact-info__text info@yourmail.com
+            .contact-info__web
+                i.fas.fa-globe
+                p.contact-info__text dorian.design
+
+        .contact-form
+            h3.contact-form__title Contact form
+
+            form#contact-form.form
+                .form__field
+                    input#form-name(type="text").form__input
+                    label#form-name-label(for="form-name").form__label Name
+                .form__field
+                    input#form-email(type="email").form__input
+                    label#form-email-label(for="form-email").form__label Email
+                .form__field
+                    input#form-phone(type="phone").form__input
+                    label#form-phone-label(for="form-phone").form__label Phone
+                .form__field
+                    textarea#form-message.form__input
+                    label#form-message-label(for="form-message").form__label Message
+                button.button.button--form Send message
