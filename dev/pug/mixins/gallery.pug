@@ -1,0 +1,8 @@
+mixin gallery (items)
+
+    each item in items
+        figure.card-work
+            img(src= item.src).card-work__img
+            h3.card-word__title= item.title
+            figurecaption.card-work__title= item.figcaption
+
