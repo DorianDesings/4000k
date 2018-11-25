@@ -1,0 +1,12 @@
+mixin card-home(icon, title, description, button)
+    .card-home
+        .card-home__header
+            i(class=`icon ${icon}`)
+            h3.card-home__title= title
+
+        p.card-home__description= description
+
+        .card-home__footer
+            a(href=`#${button.link}` class="button button--card")= button.text
+                
+            
