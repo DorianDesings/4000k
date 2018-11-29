@@ -4,10 +4,16 @@ include ../mixins/mixins
 doctype html
 html(lang='es')
     head
-        meta(charset='utf-8')
-        meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0')
-        link(rel="stylesheet", href="css/styles.css")
-        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
+        title My awesome title
+        meta(charset="utf-8")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="twitter:site" content=twitterAccount)
+        meta(property="og:title" content=pageTitle)
+        meta(property="og:description" content=pageDescription)
+        meta(property="og:image" content=pageImage)
+        link(href="css/styles.css", rel="stylesheet")
+        link(href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous")
     body
         noscript Necesitas habilitar JavaScript
         header.header
@@ -16,12 +22,13 @@ html(lang='es')
                     img(src="../assets/img/logo.png", alt="")
             include ../includes/main-menu
         
-        
         include ../includes/home
         include ../includes/work
         include ../includes/testimonials
         include ../includes/services
         include ../includes/about
+        include ../includes/fun-facts
         include ../includes/get-in-touch
+        include ../includes/footer
         
         script(src="js/scripts-min.js")

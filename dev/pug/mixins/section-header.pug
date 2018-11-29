@@ -1,6 +1,9 @@
 mixin section-header (title, description)
-
-    .section__header
-
-        h2.section__title= title
-        p.section__description= description
+    if title == 'services'
+        .section__header.section-header--left
+            h2.section__title= title
+            p.section__description= description
+    else
+        .section__header
+            h2.section__title= title
+            p.section__description= description
