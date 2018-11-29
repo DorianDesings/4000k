@@ -1,0 +1,9 @@
+mixin testimony (testimonials)
+    each testimony in testimonials
+        .testimony__item
+            p.testimony__text= testimony.text
+            .author
+                img(src= testimony.src, alt="").author__img 
+                .author__info
+                    p.author__first-line #{testimony.author} #{testimony.job} #{testimony.web}
+                    p.author__second-line #{testimony.level}  

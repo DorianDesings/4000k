@@ -1,8 +1,8 @@
-// Config
+//Config
 @import "config/functions";
 @import "config/variables";
 @import "config/mixins";
-// Base and elements (generic)
+//Base and elements (generic)
 @import "base/normalize.scss";
 @import "base/base";
 // LAYOUT
@@ -18,5 +18,5 @@
 @import "theme/typography";
 // Utilities (hacks)
 // Todos los hacks que hayas necesitado para solucionar conflictos
-// o resolver situaciones extremas. Se espera poder mejorarlos luego.
+// o resolver situaciones extremas, como los !important
 @import "hacks/hacks";

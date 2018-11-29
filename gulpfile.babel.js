@@ -60,7 +60,7 @@ gulp.task("default", () => {
     server: "./public"
   })
 
-  gulp.watch("./dev/scss/styles.scss", gulp.series("sass"))
+  gulp.watch("./dev/scss/**/*.scss", gulp.series("sass"))
   gulp.watch("./dev/pug/**/*.pug", gulp.series("pug")).on("change", server.reload)
   gulp.watch('./dev/js/*.js', gulp.series('babel')).on('change', server.reload)
 })
